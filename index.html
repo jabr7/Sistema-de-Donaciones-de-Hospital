@@ -1,0 +1,98 @@
+<!-- Programado por Joaquin Bonifacino y Rafael Cadenas-->
+<!doctype html>
+<html lang="es">
+	<head>
+		<link rel="stylesheet" href="css/styles.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Pagina de Donaciones para una Institucion">		
+		<script src="js/clases.js"></script>
+		<script src="js/script.js"></script>
+		<script src="https://www.gstatic.com/charts/loader.js"></script>
+		<title>Sistema de Donaciones</title>
+	</head>
+	<body>
+	<nav>
+		<h2 id="tituloNav">Sistema de donaciones</h2>
+		
+		<img src="img/logo.png" alt="Logo" id="Logo">
+		<a class="menuizq1" href="#donantes">Donantes</a>
+		<a class="menuizq1" href="#donaciones">Donanciones</a>
+		<a class="menuizq1" href="#estadisticas">Estadísticas</a>	
+		<em id="total">Total General <br> sin datos</em>
+
+		<em id="mayor">Monto Donación Mayor <br> sin datos</em>	
+	</nav>
+	<section>
+		<h2 id="tituloSect"></h2>
+		<aside id="donantes" class="cont-sect">
+			<h2 class="titulos">Registro de Donantes</h2>
+				<form method="get" action="#" id="idFormDonantes">
+					<label for="nombre">Nombre</label>	
+					<input type="text" id="nombre" name="nombre" placeholder="Nombre" maxlength="20" required=""> 
+					<label for="direccion">Direccion</label>	
+					<input type="text" id="direccion" name="direccion" placeholder="Dirección" maxlength="20" required="">
+					<label for="telefono">Telefono</label>	
+					<input type="text" id="telefono" name="telefono" placeholder="Teléfono" maxlength="20" required="">
+					<input id="infoDonantes" type="button" value="Agregar">
+				</form>
+		</aside>
+
+		<aside id="donaciones" class="cont-sect">
+			<form method="get" action="#" id="idFormDonaciones">
+				<h2 class="titulos">Registro de Donaciones</h2>
+				<label for="idDonante">Donantes</label>	
+				<select name="Donante" id="idDonante">
+					
+				</select>
+
+				<label for="idModo">Modo</label>	
+				<select name="Modo" id="idModo">
+					<option value="Efectivo" selected>Efectivo</option>
+					<option value="Transferencia">Transferencia</option>
+					<option value="Canje">Canje</option>
+					<option value="Mercaderia">Mercaderia</option>
+					<option value="Cheque">Cheque</option>
+					<option value="Otros">Otros</option>
+				</select>
+
+				<label for="idMonto">Monto</label>
+				<input type="number" id="idMonto" name="Monto" min="1" required="">
+
+				<label for="idComentarios">Comentarios</label>
+				<input type="text" id="idComentarios" name="Comentarios">
+
+				<input id="infoDonaciones" type="button" value="Agregar">
+				<br>
+			</form>
+			<h3>Donaciones Registradas</h3>
+		<div id="Orden">
+			<label>Orden:</label>
+			<input type="radio" id="idDecreciente" name="Orden" checked="">
+			<label for="idDecreciente">Monto Decreciente</label>
+			<input type="radio" id="idCreciente" name="Orden">
+			<label for="idCreciente">Nombre donante creciente</label>
+		</div>
+			<table id="tablaDonaciones">
+			</table>
+
+			<p>Resaltar filas:</p>
+			<input type="checkbox" id="idResaltar" checked>
+			<p>de monto:</p>
+			<input type="number" min="0" id="idBuscar" name="Buscar" placeholder="0">
+		</aside>
+		<aside id="estadisticas" class="cont-sect">
+			<h2 class="titulos">Estadísticas</h2>
+			<p id="idTotalDonaciones">Cantidad total de donaciones: 0</p>
+			<p id="idPromedioMonto">Promedio por donación: sin datos</p>
+			<p id="texto">Donante que más veces donó: sin datos</p>
+			<ul id="idDonanteMayor">
+				
+			</ul>
+			<div id="donutchart"></div>
+		</aside>
+	</section>
+	<footer>Cátedra de programación - Programación 1 - 2021 - Joaquin Bonifacino / 243193 - Rafael Cadenas / 269150</footer>
+	</body>
+	
+</html>

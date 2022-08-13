@@ -1,0 +1,208 @@
+
+/*Joaquin Bonifacino y Rafael Cadenas-->*/
+	@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+    
+
+
+	body{
+		font-family: 'Roboto', sans-serif;
+		background-color: #d3d3d3;
+        font-weight: bold;
+	}
+
+	#Logo{
+        border-radius: 100%;
+        width: 40%;
+        height: 40%;
+        background-color: #f3f3f3;
+        margin-left: 25%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .menuizq1{
+    background-color: #72a2cf; 
+    display:block;
+    margin-left: 1%;
+    width: 90%;
+    border-radius: 10px;
+    margin-top: 1%;
+    padding: 0.5%;
+    text-align: center;
+    border: 2px solid #0015af;
+    font-size: 140%;
+
+    }
+
+    #tituloSect{
+        display: none;
+    }
+
+    #tituloNav{
+        text-align: center;
+    }
+    section{
+        background-color:blue;
+        float: right;
+        width: 78%;
+        background-color: #bababa;
+        padding-left: 2%;
+        padding-bottom: 8.95%;
+
+    }
+
+    nav{
+        float:left;
+        background-color: #d3d3d3;
+        
+        width: 20%;
+    }
+    
+    footer{
+        background-color: #6d6d6d;
+        text-align: center;
+        color: white;
+        padding-bottom: 1%;
+        padding-top: 1%;
+        font-size: 14px;
+        clear:both;
+        width: 100%;
+    }
+    
+    #total{
+    background-color: #3a6fa2;
+    display:block;
+    margin-left: 1%;
+    width: 90%;
+    border-radius: 30px;
+    margin-top: 10%;
+    padding: 0.5%;
+    text-align: center;
+    color: white;
+    border-style: double;
+    font-size: 150%;
+    }
+
+    #mayor{
+    background-color: #3a6fa2;
+    display:block;
+    margin-left: 1%;
+    width: 90%;
+    border-radius: 30px;
+    margin-top: 2%;
+    padding: 0.5%;
+    text-align: center;
+    color: white;
+    border-style: double;
+    font-size: 150%;
+    
+
+    }
+
+    .cont-sect{
+        font-size: 20px;
+        padding-left: 7%;
+    }
+
+    .titulos{
+        font-size: 35px;
+
+    }
+
+
+    body{
+        margin:0px;
+        overflow: auto;
+    }
+
+    nav h2{
+        margin:0px;
+        padding: 1%;
+        font-size: 32px;
+    }
+
+    #idMonto{
+    width: 4%;
+    }
+
+    #idComentarios{
+    	width: 15%;
+    }
+
+    table{
+    	width:90%;
+    	text-align: center;
+        padding-top: 
+    }
+
+    table, th, td {
+ 	 	border: 1px solid black;
+	}
+
+    #Orden{
+        padding-bottom: 1.5%
+    }
+
+    #idEfectivo{
+    	color:red;
+    }
+
+    .noEfectivo{
+    	color: green;
+    }
+
+    #donaciones p{
+    	display: inline-block;
+    }
+
+    #donaciones h2{
+    	padding-top: 2%;
+    }
+
+    #donaciones h3{
+		padding-top: 1%;
+    }
+
+   ul{
+      list-style-image: url("../img/icons8-pica-24.png")
+    }
+
+
+
+@media screen and (max-width: 700px) {
+    section{
+        float: none;
+        width: 98%;
+    }
+
+    body{
+        width: 100%;
+
+    }
+    nav{
+       float: none;
+       width: 95%;
+    }
+    .menuizq1{
+    width: 100%;
+    }
+
+    nav h2{
+        text-align: center;
+        margin:0px;
+        padding: 1%;
+        font-size: 32px;
+        padding-top: 3%;
+    }
+
+    #Logo{
+        margin-left: 30%;
+    }
+
+     #total{
+        width: 100%;
+     }
+     #mayor{
+        width: 100%;
+     }
+
